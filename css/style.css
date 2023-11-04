@@ -70,8 +70,8 @@ body {
   padding-top: 25px;
 }
 .container_lista {
+  max-width:450px ;
   min-width: 300px;
-  width:450px ;
 }
 .container_lista h3 {
   font-weight: 300;
