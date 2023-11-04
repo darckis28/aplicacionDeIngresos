@@ -70,7 +70,8 @@ body {
   padding-top: 25px;
 }
 .container_lista {
-  width: 320px;
+  min-width: 300px;
+  width:450px ;
 }
 .container_lista h3 {
   font-weight: 300;
@@ -156,4 +157,11 @@ body {
   background-color: #09f8d0e5;
   border-radius: 5px;
   cursor: pointer;
+}
+@media  (max-width: 769px) {
+  .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

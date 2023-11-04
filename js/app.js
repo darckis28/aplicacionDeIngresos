@@ -123,9 +123,9 @@ btnAdd.addEventListener('click',(e)=>{
       let valor = form[2].value;
       if(descripcion !== ''&& valor !== ''){
         if(tipo === 'ingreso'){
-            entradas.push(new Entrada(descripcion,parseInt(valor)))
+            entradas.push(new Entrada(descripcion,parseFloat(valor)))
           }else{
-            gastos.push(new Gasto(descripcion,parseInt(valor)))
+            gastos.push(new Gasto(descripcion,parseFloat(valor)))
           }
           cabecera();
           insertIngresos(entradas);
