@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>APLICACION PRESUPUESTO</title>
+  </head>
+  <body>
+    <div class="cabecera">
+      <div class="container_presupuesto">
+        <h1 class="title_cabecera">Presupuesto Disponible</h1>
+        <span class="dinero_total" id="total_money">50000</span>
+        <div class="container_datos ingresos">
+          <h2>INGRESOS</h2>
+          <span class="ingresos" id="ingreso_total">18000</span>
+        </div>
+        <div class="container_datos egresos">
+          <h2>EGRESOS</h2>
+          <span class="egresos" id="egreso_total" >1500</span>
+          <span class="porcentaje" id="porcentaje_total">55.55%</span>
+        </div>
+      </div>
+    </div>
+    <form class="container_entradas" id="form">
+      <select>
+        <option value="ingreso" selected>+</option>
+        <option value="egreso">-</option>
+      </select>
+      <input class="entrada" type="text" placeholder="descripcion">
+        <input class="cantidad" type="number" placeholder="valor" step="any">
+        <button id="add">agregar</button>
+    </form>
+    <div class="container">
+      <div class="container_lista">
+        <h3 class="color_ingreso">INGRESOS</h3>
+        <ul class="lista_datos" id="lista_ingresos">
+          <li>
+            <h4>Ropa</h4>
+            <div>
+              <span class="dinero color_ingreso">5000</span>
+            </div>
+            <button class="btn_delete"><i class="fa-solid fa-trash"></i></button>
+          </li>
+          <li>
+            <h4>camisa</h4>
+            <div>
+              <span class="dinero  color_ingreso">92</span>
+            </div>
+            <button class="btn_delete"><i class="fa-solid fa-trash"></i></button>
+          </li>
+        </ul>
+      </div>
+      <div class="container_lista">
+        <h3 class="color_egreso">EGRESOS</h3>
+        <ul  class="lista_datos" id="lista_egresos">
+          <li >
+            <h4>Ropa</h4>
+            <div  class="container_lista--egresos">
+              <span class="dinero color_egreso">5000</span>
+              <span class="dinero_porcentaje">45.8</span>
+            </div>
+            <button class="btn_delete"><i class="fa-solid fa-trash"></i></button>
+          </li>
+          <li>
+            <h4>camisa</h4>
+            <div class="container_lista--egresos">
+              <span class="dinero color_egreso">92</span>
+              <span class="dinero_porcentaje">45.8</span>
+            </div>
+            <button class="btn_delete"><i class="fa-solid fa-trash"></i></button>
+          </li>
+          
+        </ul>
+      </div>
+
+      </div>
+    </div>
+    <script src="./js/dato.js"></script>
+    <script src="./js/entrada.js"></script>
+    <script src="./js/gasto.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://kit.fontawesome.com/30a542c1ff.js" crossorigin="anonymous"></script>
+  </body>
+</html>
